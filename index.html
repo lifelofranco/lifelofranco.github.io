@@ -1,0 +1,33 @@
+---
+layout: home
+title: Home
+permalink: /
+image: life.jpg
+---
+
+
+<div class="post-list">
+
+  {% for post in site.posts %}
+  <div class="post">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+
+    <div class="excerpt">
+      {{ post.excerpt }}
+      {% if post.content contains site.excerpt_separator %}
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+      {% endif %}
+    </div>
+    <span class="post-date"> {{ site.title }} | {{ post.date | date: '%B %-d, %Y' }}</span>
+
+  </div>
+  {% endfor %}
+
+
+</div>
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
