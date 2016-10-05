@@ -10,6 +10,9 @@ h1 {
 }
 .background {
     background-image: url(../images/bg.jpeg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     min-height: 633px;
     position: absolute;
@@ -18,8 +21,6 @@ h1 {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-size: cover;
-
 }
 
 .post {
