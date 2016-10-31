@@ -19,6 +19,15 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <div class="fb-comments" data-href="http://lifelofranco.com{{post.url}}" data-numposts="5"></div>
 
 </article>
+
+{% if page.comments %}
+  <hr/>
+  <div class="fb-comments" data-href="{{site.url}}{{ page.url }}/" data-numposts="5" data-width="700"></div>
+
+{% endif %}
+
+<!-- {% for post in site.posts offset:1 limit: 1 %}
+{{post.title}}
+{% endfor %} -->

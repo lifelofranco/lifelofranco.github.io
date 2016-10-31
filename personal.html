@@ -1,7 +1,29 @@
-<!-- ---
-layout: page
+---
+layout: default
 title: Personal
 permalink: /personal/
 ---
+<div class="post-list">
 
-<h1> nothing to see here </h1> -->
+  {% for post in site.categories.personal %}
+  <div class="post">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+
+
+    <div class="excerpt">
+      {{ post.excerpt }}
+      {% if post.content contains site.excerpt_separator %}
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+      {% endif %}
+    </div>
+    <span class="post-date"> {{ site.title }} | {{ post.date | date: '%B %-d, %Y' }}</span>
+
+  </div>
+  {% endfor %}
+
+
+</div>

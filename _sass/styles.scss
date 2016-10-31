@@ -43,6 +43,18 @@ h1 {
     border-top: 1px solid #EBF2F6;
     padding-top: 10px;
   }
+  ul {
+    margin-bottom: 25px;
+  }
+  li {
+    font-family: $text-font;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.9em;
+  }
+  pre {
+    margin-bottom: 25px;
+  }
 }
 .home {
   text-align: center;
@@ -111,5 +123,11 @@ h1 {
     color: #828282;
     font-size: 13px;
     text-transform: uppercase;
+  }
+}
+.excerpt {
+  margin-bottom: 15px;
+  p {
+      display: inline;
   }
 }

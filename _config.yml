@@ -7,12 +7,15 @@
 
 # Site settings
 title: Life Lofranco
-email: your-email@domain.com
+email: lifelofranco@lifelofranco.com
 description: Enthusiast. Traveler. Developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lifelofranco.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: LifeLofranco
+github_username:  lifelofranco
 excerpt_separator: "<!--excerpt-->"
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
