@@ -21,9 +21,8 @@ layout: default
   </div>
 
 </article>
-<div class="fb-like" data-href="{{site.url}}{{ page.url }}/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-
+{% include share.html %}
 {% if page.comments %}
   <hr/>
   <div class="fb-comments" data-href="{{site.url}}{{ page.url }}/" data-numposts="5" data-width="700"></div>
